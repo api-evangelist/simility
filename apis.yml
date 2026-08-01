@@ -1,22 +1,49 @@
 aid: simility
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/simility.png
 name: Simility
-description: 'Simility is a company surfaced as a portfolio company of accel, trinity-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Simility was a fraud-detection and risk-decisioning company (a "Digital Trust & Safety"
+  adaptive machine-learning platform) founded in 2014 in Palo Alto, California and backed by Accel and
+  Trinity Ventures. PayPal acquired Simility in 2018 and folded its device fingerprinting, behavioral
+  analytics, and real-time fraud-scoring capabilities into PayPal''s risk and fraud-management offerings.
+  The standalone Simility product, developer portal, and any public fraud-scoring API have since been
+  retired: as of this enrichment pass the simility.com domain is registered defensively by PayPal (via
+  MarkMonitor / Google Domains nameservers) but publishes no A record, website, mail, or API host. No
+  live public API surface exists to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/simility/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - accel
 - trinity-ventures
+x-status: acquired
+x-acquired-by: paypal
+x-acquired-year: 2018
+x-domain-status: held-no-live-site
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Fraud Detection
+- Risk Management
+- Machine Learning
+- Payments
+- Security
+- Anti-Fraud
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,10 @@ maintainers:
 common:
 - type: Website
   url: http://www.simility.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: Domain held by PayPal (MarkMonitor) but resolves to no A/MX/TXT record; company
+    acquired by PayPal 2018, no live public API surface.
