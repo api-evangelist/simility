@@ -80,3 +80,12 @@ x-enrichment:
   pass: local-v1
   note: Domain held by PayPal (MarkMonitor) but resolves to no A/MX/TXT record; company
     acquired by PayPal 2018, no live public API surface.
+x-lifecycle:
+  state: deprecated
+  reason: domain-does-not-resolve
+  observed: '2026-09-27'
+  detail: >-
+    The company's own domain returned no A or AAAA record when probed. This is an observation about the domain, not a request from the company.
+  indexed: true
+  successor: paypal
+  successor_in_catalog: true
